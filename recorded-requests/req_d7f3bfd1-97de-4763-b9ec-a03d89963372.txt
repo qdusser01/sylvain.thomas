@@ -1,0 +1,17 @@
+POST http://practice.neotys.com/jpetstore/shop/searchProducts.shtml;jsessionid=DF45F00980E3D60CA7D80D371E737172 HTTP/1.1
+Host: practice.neotys.com
+Proxy-Connection: keep-alive
+Content-Length: 29
+Cache-Control: max-age=0
+Authorization: Basic bGVhcm5lcjpuM290eXM=
+Upgrade-Insecure-Requests: 1
+Origin: http://practice.neotys.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://practice.neotys.com/jpetstore/shop/index.shtml
+Accept-Encoding: gzip, deflate
+Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: JSESSIONID=DF45F00980E3D60CA7D80D371E737172
+
+keyword=amazon+parrot&x=0&y=0

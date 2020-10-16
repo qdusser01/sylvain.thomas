@@ -1,0 +1,666 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rapport de test de performance</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="leftnavigation">
+<div class="divHeader">Rapport de Test NeoLoad</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Synth&egrave;se</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Synth&egrave;se des R&eacute;sultats</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Synth&egrave;se des Statistiques</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Points chauds</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Erreurs</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alertes</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">Statistiques g&eacute;n&eacute;rales</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Statistiques des transactions</a>
+</div>
+<div class="item">
+<a href="./settings.html">Contexte d'ex&eacute;cution</a>
+</div>
+<div class="item">
+<a href="./servers.html">Serveurs</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">Parcours Utilisateur</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Contenus M&eacute;dias</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Messages push</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Moniteurs</a>
+</div>
+<div class="item">
+<a href="./scenario_PetstoreScenario.html">Sc&eacute;nario</a>
+</div>
+<div class="title">Graphes principaux</div>
+<div class="item">
+<a href="./Graphes principaux_pages.average.html">Temps de r&eacute;ponse moyen (pages)</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_requests.average.html">Temps de r&eacute;ponse moyen (requ&ecirc;tes)</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_transactions.average.html">Temps de r&eacute;ponse moyen (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_hits.html">Requ&ecirc;tes par seconde</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_errors.html">Erreurs</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_throughput.html">D&eacute;bit</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_pages.average.vu.html">Temps de r&eacute;ponse moyen en fonction de la charge</a>
+</div>
+<div class="item">
+<a href="./Graphes principaux_percentile.html">Distribution de la dur&eacute;e des Transactions</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_neotys.png"></div>
+</div>
+<div id="content">
+<div class="divHeader">Moniteurs</div>
+<p class="mediumtitle">Contr&ocirc;leur</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Compteurs de performance</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Moy</th><th width="5%">Max</th><th width="5%">M&eacute;d</th><th width="5%">Moy-90%</th><th width="5%">Ecart Type</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Charge Utilisateurs</span></td><td class="line2right bordered">0</td><td class="line2right bordered">27,3</td><td class="line2right bordered">50</td><td class="line2right bordered">27</td><td class="line2right bordered">27,5</td><td class="line2right bordered">19,2</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/D&eacute;bit</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0,478</td><td class="line1right bordered">2,89</td><td class="line1right bordered">0,325</td><td class="line1right bordered">0,426</td><td class="line1right bordered">0,533</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Alertes</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Alertes critiques</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Alertes d'avertissement</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Charge CPU</span></td><td class="line1right bordered">1</td><td class="line1right bordered">6,41</td><td class="line1right bordered">49</td><td class="line1right bordered">6</td><td class="line1right bordered">6,08</td><td class="line1right bordered">3,39</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/M&eacute;moire utilis&eacute;e</span></td><td class="line2right bordered">11</td><td class="line2right bordered">20,5</td><td class="line2right bordered">31</td><td class="line2right bordered">20</td><td class="line2right bordered">20,5</td><td class="line2right bordered">5,15</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Nombre de threads</span></td><td class="line1right bordered">572</td><td class="line1right bordered">594,1</td><td class="line1right bordered">604</td><td class="line1right bordered">594</td><td class="line1right bordered">593,8</td><td class="line1right bordered">2,73</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Connect&eacute;s</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Total d&eacute;connexions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Total reconnexions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/Segments envoy&eacute;s/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/Segments retransmis/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/wlan1 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits re&ccedil;us/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/wlan1 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits envoy&eacute;s/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/wlan0 (Intel(R) Dual Band Wireless-AC 8265)/Megabits re&ccedil;us/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/wlan0 (Intel(R) Dual Band Wireless-AC 8265)/Megabits envoy&eacute;s/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/eth20 (Bluetooth Device (Personal Area Network))/Megabits re&ccedil;us/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/eth20 (Bluetooth Device (Personal Area Network))/Megabits envoy&eacute;s/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/eth4 (Realtek PCIe GBE Family Controller)/Megabits re&ccedil;us/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/R&eacute;seau/eth4 (Realtek PCIe GBE Family Controller)/Megabits envoy&eacute;s/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/NeoLoad Web/Megabits re&ccedil;us/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/NeoLoad Web/Megabits envoy&eacute;s/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Zone par d&eacute;faut/Charge Utilisateurs</span></td><td class="line1right bordered">0</td><td class="line1right bordered">27,3</td><td class="line1right bordered">50</td><td class="line1right bordered">27</td><td class="line1right bordered">27,5</td><td class="line1right bordered">19,2</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Zone par d&eacute;faut/Petstore/Charge Utilisateurs</span></td><td class="line2right bordered">0</td><td class="line2right bordered">27,3</td><td class="line2right bordered">50</td><td class="line2right bordered">27</td><td class="line2right bordered">27,5</td><td class="line2right bordered">19,2</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Zone par d&eacute;faut/Petstore/Exercice11_Searcher_trycatch/Charge Utilisateurs</span></td><td class="line1right bordered">0</td><td class="line1right bordered">15,3</td><td class="line1right bordered">30</td><td class="line1right bordered">16</td><td class="line1right bordered">15,4</td><td class="line1right bordered">12,4</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Contr&ocirc;leur/Zone par d&eacute;faut/Petstore/Exercice3_Buyer/Charge Utilisateurs</span></td><td class="line2right bordered">0</td><td class="line2right bordered">11,9</td><td class="line2right bordered">20</td><td class="line2right bordered">14</td><td class="line2right bordered">12,2</td><td class="line2right bordered">7,58</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">ServeurFormationNeoload/mysql<span class="mediumtitle-label"> monitor&eacute; depuis </span>localhost</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Compteurs de performance</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Moy</th><th width="5%">Max</th><th width="5%">M&eacute;d</th><th width="5%">Moy-90%</th><th width="5%">Ecart Type</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Connections/threads connected</span></td><td class="line2right bordered">8</td><td class="line2right bordered">26,4</td><td class="line2right bordered">43</td><td class="line2right bordered">27</td><td class="line2right bordered">26,4</td><td class="line2right bordered">13,3</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Connections/aborted clients</span></td><td class="line1right bordered">-</td><td class="line1right bordered">0,005</td><td class="line1right bordered">0,4</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0,054</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Connections/aborted connects</span></td><td class="line2right bordered">-</td><td class="line2right bordered">0</td><td class="line2right bordered">0,4</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0,088</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Connections/max used</span></td><td class="line1right bordered">8</td><td class="line1right bordered">34,4</td><td class="line1right bordered">43</td><td class="line1right bordered">42</td><td class="line1right bordered">35,2</td><td class="line1right bordered">11,1</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Select Rates/select full join</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Select Rates/select range check</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Read Rates/handler read random</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Read Rates/handler read random next</span></td><td class="line1right bordered">378,6</td><td class="line1right bordered">852,2</td><td class="line1right bordered">1&nbsp;210</td><td class="line1right bordered">890,2</td><td class="line1right bordered">863</td><td class="line1right bordered">171,2</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Key Rates/key reads (disk)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Key Rates/key writes (disk)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Commands Rates/handler rollback</span></td><td class="line2right bordered">8</td><td class="line2right bordered">100,8</td><td class="line2right bordered">216</td><td class="line2right bordered">84</td><td class="line2right bordered">99,3</td><td class="line2right bordered">66,2</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Commands Rates/handler savepoint rollback</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Tables/table locks waited</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Tables/table open cache</span></td><td class="line1right bordered">400</td><td class="line1right bordered">400</td><td class="line1right bordered">400</td><td class="line1right bordered">400</td><td class="line1right bordered">400</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Memory/% key buffer size</span></td><td class="line2right bordered">18,4</td><td class="line2right bordered">18,4</td><td class="line2right bordered">18,4</td><td class="line2right bordered">18,4</td><td class="line2right bordered">18,4</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Misc./slow queries</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Misc./slow launch threads</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Misc./sort merge passes</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/mysql/Misc./not flushed delayed rows</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+</table>
+</div>
+</div>
+<div style="width: 100%; height: 20px;" id="report.textualmonitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Indicateurs</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template2">
+<tr>
+<td class="line2 bordered"><span class="tablelabel">
+                &nbsp;
+                ServeurFormationNeoload/mysql/Description/Database Version</span></td><td class="line2 bordered">
+<ul class="valuesList">
+<li>5.5.59</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">ServeurFormationNeoload/http-apache<span class="mediumtitle-label"> monitor&eacute; depuis </span>localhost</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Compteurs de performance</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Moy</th><th width="5%">Max</th><th width="5%">M&eacute;d</th><th width="5%">Moy-90%</th><th width="5%">Ecart Type</th>
+</table>
+</div>
+</div>
+<p class="mediumtitle">ServeurFormationNeoload/tomcat<span class="mediumtitle-label"> monitor&eacute; depuis </span>localhost</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Compteurs de performance</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Moy</th><th width="5%">Max</th><th width="5%">M&eacute;d</th><th width="5%">Moy-90%</th><th width="5%">Ecart Type</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/maxActive</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/sessionMaxAliveTime</span></td><td class="line1right bordered">1&nbsp;827</td><td class="line1right bordered">1&nbsp;827</td><td class="line1right bordered">1&nbsp;827</td><td class="line1right bordered">1&nbsp;827</td><td class="line1right bordered">1&nbsp;827</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/sessionAverageAliveTime</span></td><td class="line2right bordered">1&nbsp;827</td><td class="line2right bordered">1&nbsp;827</td><td class="line2right bordered">1&nbsp;827</td><td class="line2right bordered">1&nbsp;827</td><td class="line2right bordered">1&nbsp;827</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//addressbook-gwt/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/maxActive</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/sessionMaxAliveTime</span></td><td class="line1right bordered">1&nbsp;799</td><td class="line1right bordered">1&nbsp;799</td><td class="line1right bordered">1&nbsp;799</td><td class="line1right bordered">1&nbsp;799</td><td class="line1right bordered">1&nbsp;799</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/sessionAverageAliveTime</span></td><td class="line2right bordered">1&nbsp;799</td><td class="line2right bordered">1&nbsp;799</td><td class="line2right bordered">1&nbsp;799</td><td class="line2right bordered">1&nbsp;799</td><td class="line2right bordered">1&nbsp;799</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//auctionMonitor/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/maxActive</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/sessionMaxAliveTime</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/sessionAverageAliveTime</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//certification/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/maxActive</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/sessionMaxAliveTime</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/sessionAverageAliveTime</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//CurrencyConverter/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/maxActive</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/sessionMaxAliveTime</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/sessionAverageAliveTime</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//host-manager/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/activeSessions</span></td><td class="line2right bordered">180</td><td class="line2right bordered">952,6</td><td class="line2right bordered">1&nbsp;820</td><td class="line2right bordered">884,5</td><td class="line2right bordered">941,2</td><td class="line2right bordered">572,8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">14,5</td><td class="line1right bordered">34</td><td class="line1right bordered">15</td><td class="line1right bordered">14,3</td><td class="line1right bordered">8,1</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/maxActive</span></td><td class="line2right bordered">446</td><td class="line2right bordered">997</td><td class="line2right bordered">1&nbsp;820</td><td class="line2right bordered">887</td><td class="line2right bordered">976,9</td><td class="line2right bordered">521,9</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/sessionMaxAliveTime</span></td><td class="line1right bordered">7&nbsp;251</td><td class="line1right bordered">7&nbsp;251</td><td class="line1right bordered">7&nbsp;251</td><td class="line1right bordered">7&nbsp;251</td><td class="line1right bordered">7&nbsp;251</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/sessionAverageAliveTime</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0,979</td><td class="line2right bordered">18</td><td class="line2right bordered">0</td><td class="line2right bordered">0,359</td><td class="line2right bordered">3,28</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//jpetstore/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">3,28</td><td class="line1right bordered">28</td><td class="line1right bordered">2</td><td class="line1right bordered">2,78</td><td class="line1right bordered">3,7</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/maxActive</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/sessionMaxAliveTime</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/sessionAverageAliveTime</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//manager/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/maxActive</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/sessionMaxAliveTime</span></td><td class="line1right bordered">1&nbsp;840</td><td class="line1right bordered">1&nbsp;840</td><td class="line1right bordered">1&nbsp;840</td><td class="line1right bordered">1&nbsp;840</td><td class="line1right bordered">1&nbsp;840</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/sessionAverageAliveTime</span></td><td class="line2right bordered">1&nbsp;840</td><td class="line2right bordered">1&nbsp;840</td><td class="line2right bordered">1&nbsp;840</td><td class="line2right bordered">1&nbsp;840</td><td class="line2right bordered">1&nbsp;840</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//neotys-chat/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/maxActive</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/sessionMaxAliveTime</span></td><td class="line1right bordered">1&nbsp;561</td><td class="line1right bordered">1&nbsp;561</td><td class="line1right bordered">1&nbsp;561</td><td class="line1right bordered">1&nbsp;561</td><td class="line1right bordered">1&nbsp;561</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/sessionAverageAliveTime</span></td><td class="line2right bordered">1&nbsp;561</td><td class="line2right bordered">1&nbsp;561</td><td class="line2right bordered">1&nbsp;561</td><td class="line2right bordered">1&nbsp;561</td><td class="line2right bordered">1&nbsp;561</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//nts/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/maxActive</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/sessionMaxAliveTime</span></td><td class="line1right bordered">1&nbsp;834</td><td class="line1right bordered">1&nbsp;834</td><td class="line1right bordered">1&nbsp;834</td><td class="line1right bordered">1&nbsp;834</td><td class="line1right bordered">1&nbsp;834</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/sessionAverageAliveTime</span></td><td class="line2right bordered">1&nbsp;834</td><td class="line2right bordered">1&nbsp;834</td><td class="line2right bordered">1&nbsp;834</td><td class="line2right bordered">1&nbsp;834</td><td class="line2right bordered">1&nbsp;834</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//subsonic/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/activeSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/sessionCounter</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/maxActive</span></td><td class="line2right bordered">21</td><td class="line2right bordered">21</td><td class="line2right bordered">21</td><td class="line2right bordered">21</td><td class="line2right bordered">21</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/sessionMaxAliveTime</span></td><td class="line1right bordered">3&nbsp;099</td><td class="line1right bordered">3&nbsp;099</td><td class="line1right bordered">3&nbsp;099</td><td class="line1right bordered">3&nbsp;099</td><td class="line1right bordered">3&nbsp;099</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/sessionAverageAliveTime</span></td><td class="line2right bordered">26</td><td class="line2right bordered">26</td><td class="line2right bordered">26</td><td class="line2right bordered">26</td><td class="line2right bordered">26</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/rejectedSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/% rejectedSessions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/Session/localhost//zkspringwf/expiredSessions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Memory/Used</span></td><td class="line2right bordered">113&nbsp;921&nbsp;624</td><td class="line2right bordered">142&nbsp;034&nbsp;045</td><td class="line2right bordered">164&nbsp;136&nbsp;296</td><td class="line2right bordered">141&nbsp;566&nbsp;928</td><td class="line2right bordered">141&nbsp;993&nbsp;680</td><td class="line2right bordered">12&nbsp;405&nbsp;174</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Memory/% Used</span></td><td class="line1right bordered">3,04</td><td class="line1right bordered">3,8</td><td class="line1right bordered">4,39</td><td class="line1right bordered">3,78</td><td class="line1right bordered">3,8</td><td class="line1right bordered">0,332</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Memory/Commited</span></td><td class="line2right bordered">498&nbsp;073&nbsp;600</td><td class="line2right bordered">502&nbsp;479&nbsp;774</td><td class="line2right bordered">505&nbsp;937&nbsp;920</td><td class="line2right bordered">502&nbsp;267&nbsp;904</td><td class="line2right bordered">502&nbsp;500&nbsp;032</td><td class="line2right bordered">1&nbsp;655&nbsp;173</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Memory/Max</span></td><td class="line1right bordered">3&nbsp;741&nbsp;319&nbsp;168</td><td class="line1right bordered">3&nbsp;741&nbsp;319&nbsp;168</td><td class="line1right bordered">3&nbsp;741&nbsp;319&nbsp;168</td><td class="line1right bordered">3&nbsp;741&nbsp;319&nbsp;168</td><td class="line1right bordered">3&nbsp;741&nbsp;319&nbsp;168</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Garbage Collector/PS MarkSweep/CollectionCount</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Garbage Collector/PS MarkSweep/CollectionTime</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Garbage Collector/PS Scavenge/CollectionCount</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0,414</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td><td class="line2right bordered">0,4</td><td class="line2right bordered">0,494</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Garbage Collector/PS Scavenge/CollectionTime</span></td><td class="line1right bordered">0</td><td class="line1right bordered">2,63</td><td class="line1right bordered">10</td><td class="line1right bordered">0</td><td class="line1right bordered">2,45</td><td class="line1right bordered">3,2</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Threads/ThreadCount</span></td><td class="line2right bordered">93</td><td class="line2right bordered">152,8</td><td class="line2right bordered">187</td><td class="line2right bordered">151</td><td class="line2right bordered">153,9</td><td class="line2right bordered">26,2</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Threads/DaemonThreadCount</span></td><td class="line1right bordered">80</td><td class="line1right bordered">139,8</td><td class="line1right bordered">174</td><td class="line1right bordered">138</td><td class="line1right bordered">140,9</td><td class="line1right bordered">26,2</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">ServeurFormationNeoload/tomcat/VM/Threads/PeakThreadCount</span></td><td class="line2right bordered">146</td><td class="line2right bordered">169,4</td><td class="line2right bordered">187</td><td class="line2right bordered">181</td><td class="line2right bordered">169,6</td><td class="line2right bordered">17,5</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">Injecteur localhost:7100</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Compteurs de performance</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Moy</th><th width="5%">Max</th><th width="5%">M&eacute;d</th><th width="5%">Moy-90%</th><th width="5%">Ecart Type</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Charge CPU</span></td><td class="line2right bordered">1</td><td class="line2right bordered">6,4</td><td class="line2right bordered">51</td><td class="line2right bordered">6</td><td class="line2right bordered">6,09</td><td class="line2right bordered">3,4</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/M&eacute;moire utilis&eacute;e</span></td><td class="line1right bordered">3</td><td class="line1right bordered">10,72</td><td class="line1right bordered">24</td><td class="line1right bordered">10</td><td class="line1right bordered">10,46</td><td class="line1right bordered">4,88</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/D&eacute;bit</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0,478</td><td class="line2right bordered">2,89</td><td class="line2right bordered">0,325</td><td class="line2right bordered">0,426</td><td class="line2right bordered">0,533</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Charge Utilisateurs</span></td><td class="line1right bordered">0</td><td class="line1right bordered">27,3</td><td class="line1right bordered">50</td><td class="line1right bordered">27</td><td class="line1right bordered">27,5</td><td class="line1right bordered">19,2</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Nombre de threads</span></td><td class="line2right bordered">41</td><td class="line2right bordered">88,2</td><td class="line2right bordered">118</td><td class="line2right bordered">91,5</td><td class="line2right bordered">89,3</td><td class="line2right bordered">24,6</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Client HTTP/Nombre de threads</span></td><td class="line1right bordered">0,1</td><td class="line1right bordered">0,12</td><td class="line1right bordered">0,145</td><td class="line1right bordered">0,12</td><td class="line1right bordered">0,12</td><td class="line1right bordered">0,012</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Client HTTP/Nombre de t&acirc;ches</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0,017</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0,001</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Connexion Contr&ocirc;leur/D&eacute;connexions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Connexion Contr&ocirc;leur/Reconnexions</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/Connexion Contr&ocirc;leur/Temps du ping (ms)</span></td><td class="line1right bordered">1</td><td class="line1right bordered">3,77</td><td class="line1right bordered">7</td><td class="line1right bordered">3</td><td class="line1right bordered">3,74</td><td class="line1right bordered">1,99</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/Segments envoy&eacute;s/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/Segments retransmis/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/wlan1 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits re&ccedil;us/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/wlan1 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits envoy&eacute;s/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/wlan0 (Intel(R) Dual Band Wireless-AC 8265)/Megabits re&ccedil;us/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/wlan0 (Intel(R) Dual Band Wireless-AC 8265)/Megabits envoy&eacute;s/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/eth20 (Bluetooth Device (Personal Area Network))/Megabits re&ccedil;us/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/eth20 (Bluetooth Device (Personal Area Network))/Megabits envoy&eacute;s/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/eth4 (Realtek PCIe GBE Family Controller)/Megabits re&ccedil;us/s</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Injecteur localhost:7100/R&eacute;seau/eth4 (Realtek PCIe GBE Family Controller)/Megabits envoy&eacute;s/s</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

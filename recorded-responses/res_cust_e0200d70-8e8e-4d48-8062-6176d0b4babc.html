@@ -1,0 +1,131 @@
+
+
+
+
+
+<html><head><title>JPetStore Demo</title>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<META HTTP-EQUIV="Cache-Control" CONTENT="max-age=0">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="expires" content="0">
+<META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+</head>
+
+<body bgcolor="white">
+
+<table background="../images/bkg-topbar.gif" border="0" cellspacing="0" cellpadding="5" width="100%">
+  <tbody>
+  <tr>
+    <td><a href="/jpetstore/shop/index.shtml"><img border="0" src="../images/logo-topbar.gif" /></a></td>
+    <td align="right"><a href="/jpetstore/shop/viewCart.shtml"><img border="0" name="img_cart" src="../images/cart.gif" /></a>
+      <img border="0" src="../images/separator.gif" />
+
+
+
+  
+
+
+
+  
+      <a href="/jpetstore/shop/signoff.shtml"><img border="0" name="img_signout" src="../images/sign-out.gif" /></a>
+      <img border="0" src="../images/separator.gif" />
+      <a href="/jpetstore/shop/editAccountForm.shtml"><img border="0" name="img_myaccount" src="../images/my_account.gif" /></a>
+  
+
+
+      <img border="0" src="../images/separator.gif" /><a href="../help.html"><img border="0" name="img_help" src="../images/help.gif" /></a>
+    </td>
+    <td align="left" valign="bottom">
+      <form name="catalogBean" method="post" action="/jpetstore/shop/searchProducts.shtml">
+        <input name="keyword" size="14" />&nbsp;<input border="0" src="../images/search.gif" type="image" />
+      </form>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<center>
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=FISH"><img border="0" src="../images/sm_fish.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=DOGS"><img border="0" src="../images/sm_dogs.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=REPTILES"><img border="0" src="../images/sm_reptiles.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=CATS"><img border="0" src="../images/sm_cats.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=BIRDS"><img border="0" src="../images/sm_birds.gif" /></a>
+</center>
+
+
+
+
+<!-- Support for non-traditional but simple message -->
+
+
+<!-- Support for non-traditional but simpler use of errors... -->
+
+
+
+
+<form name="orderBean" method="post" action="/jpetstore/shop/newOrder.shtml" id="orderBean">
+
+<TABLE bgcolor="#008800" border=0 cellpadding=3 cellspacing=1 bgcolor=#FFFF88>
+<TR bgcolor=#FFFF88><TD colspan=2>
+<FONT color=GREEN size=4><B>Payment Details</B></FONT>
+</TD></TR><TR bgcolor=#FFFF88><TD>
+Card Type:</TD><TD>
+<select name="order.cardType"><option value="Visa" selected="selected">Visa</option>
+<option value="MasterCard">MasterCard</option>
+<option value="American Express">American Express</option></select>
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Card Number:</TD><TD><input type="text" name="order.creditCard" value="999 9999 9999 9999"> <font color=red size=2>* Use a fake number!</font>
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Expiry Date (MM/YYYY):</TD><TD><input type="text" name="order.expiryDate" value="12/03">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD colspan=2>
+<FONT color=GREEN size=4><B>Billing Address</B></FONT>
+</TD></TR>
+
+<TR bgcolor=#FFFF88><TD>
+First name:</TD><TD><input type="text" name="order.billToFirstName" value="ABC">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Last name:</TD><TD><input type="text" name="order.billToLastName" value="XYX">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Address 1:</TD><TD><input type="text" name="order.billAddress1" size="40" value="901 San Antonio Road">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Address 2:</TD><TD><input type="text" name="order.billAddress2" size="40" value="MS UCUP02-206">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+City: </TD><TD><input type="text" name="order.billCity" value="Palo Alto">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+State:</TD><TD><input type="text" name="order.billState" size="4" value="CA">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Zip:</TD><TD><input type="text" name="order.billZip" size="10" value="94303">
+</TD></TR>
+<TR bgcolor=#FFFF88><TD>
+Country: </TD><TD><input type="text" name="order.billCountry" size="15" value="USA">
+</TD></TR>
+
+<TR bgcolor=#FFFF88><TD colspan=2>
+<input type="checkbox" name="shippingAddressRequired" value="on"> Ship to different address...
+</TD></TR>
+
+</TABLE>
+<P>
+<input type="image" src="../images/button_submit.gif">
+
+</form>
+
+
+
+<p align="center">
+<a href="http://www.ibatis.com"><img border="0" align="center" src="../images/poweredby.gif" /></a>
+</p>

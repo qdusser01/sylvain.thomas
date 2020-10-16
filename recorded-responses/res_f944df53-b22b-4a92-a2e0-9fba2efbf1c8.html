@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<link rel="stylesheet" type="text/css" href="/zkspringwf/zkau/web/8802035b/zul/css/zk.wcs"/>
+
+<script type="text/javascript" src="/zkspringwf/zkau/web/8802035b/js/zk.wpd" charset="UTF-8">
+</script>
+<script type="text/javascript" src="/zkspringwf/zkau/web/8802035b/js/zul.lang.wpd" charset="UTF-8">
+</script>
+<!-- ZK 5.0.6-FL EE 2011012409 Evaluation Only -->
+<script type="text/javascript">zkdt('z_xa00','/zkspringwf','/zkspringwf/zkau');</script>
+
+    
+<h1>Login Required<script type="text/javascript">
+zkmx(null);
+
+</script>
+</h1><noscript>
+<div class="noscript"><p>Sorry, JavaScript must be enabled.<br/>Change your browser options, then <a href="">try again</a>.</p></div>
+</noscript>
+
+<div class="section">
+		<script type="text/javascript">
+zkmx(null);
+
+</script>
+
+	<p>Valid username/passwords are:</p>
+	<ul>
+		<li>keith/melbourne</li>
+	    <li>erwin/leuven</li>
+	    <li>jeremy/atlanta</li>
+	    <li>scott/rochester</li>
+	</ul>
+</div>
+
+<div class="section">
+	<form name="f" action="/zkspringwf/spring/loginProcess" method="post">
+		<fieldset>
+			<div class="field">
+				<div class="label">User:</div>
+				<div class="output">
+					
+					<div id="m9dE4" class="z-temp"></div><script type="text/javascript">
+zkmx(
+['zul.inp.Textbox','m9dE4',{$$onError:false,$$onChange:false,width:'182px',name:'j_username',constraint:'no empty:Please enter your user name'},[]]);
+
+</script>
+
+				</div>
+			</div>
+			<div class="field">
+				<div class="label">Password:</div>
+				<div class="output">
+					<div id="m9dE7" class="z-temp"></div><script type="text/javascript">
+zkmx(
+['zul.inp.Textbox','m9dE7',{width:'182px',name:'j_password',constraint:'no empty:Please enter your password',type:'password'},[]]);
+
+</script>
+
+				</div>
+			</div>
+			<div class="field">
+				<div class="label">Don't ask for my password for two weeks:</div>
+				<div class="output">
+					<div id="m9dEa" class="z-temp"></div><script type="text/javascript">
+zkmx(
+['zul.wgt.Checkbox','m9dEa',{$$onCheck:false,name:'_spring_security_remember_me'},[]]);
+
+</script>
+ 
+				</div>
+			</div>
+		</fieldset>
+		<div class="buttonGroup">
+			<input name="submit" type="submit" value="Login"/>
+		</div>
+	</form>
+</div>

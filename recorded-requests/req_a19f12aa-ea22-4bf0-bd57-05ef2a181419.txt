@@ -1,0 +1,16 @@
+POST http://practice.neotys.com/zkspringwf/zkau HTTP/1.1
+Host: practice.neotys.com
+Proxy-Connection: keep-alive
+Content-Length: 142
+Authorization: Basic bGVhcm5lcjpuM290eXM=
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36
+ZK-SID: 8649
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Accept: */*
+Origin: http://practice.neotys.com
+Referer: http://practice.neotys.com/zkspringwf/spring/main?execution=e1s3
+Accept-Encoding: gzip, deflate
+Accept-Language: fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7
+Cookie: JSESSIONID=541F5CDE3AF3336A633E6B9039DFBAA9
+
+dtid=z__b00&cmd_0=onClick&uuid_0=gLoRh0&data_0=%7B%22pageX%22%3A1254%2C%22pageY%22%3A355%2C%22which%22%3A1%2C%22x%22%3A20%2C%22y%22%3A7.375%7D
